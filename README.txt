@@ -9,6 +9,7 @@ Notes:
 1.This mod is WIP and extremely buggy, do not be afraid to post issues as I need to fix them. :)
 2.I am the currently the only developer so please do not ask to help, that is my choosing to do so.
 3.Any part of this mod may be changed at any time with or without notice.
+4.This mod is not released yet, I will decide when to do so :)
 
 Hope you stay updated :D
 -MangoBox

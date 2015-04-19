@@ -140,6 +140,11 @@
             "rotation": [ 90, 0, 180 ],
             "translation": [ 0, 0, -2 ],
             "scale": [ 1.5, 1.5, 1.5 ]
+        };
+        "firstperson": {
+            "rotation": [ 0, -45, 0 ];
+            "scale": [ 2.0, 2.0, 2.0 ];
+            "translation": [ 0, 0, 0 ]
         }
     }
 }

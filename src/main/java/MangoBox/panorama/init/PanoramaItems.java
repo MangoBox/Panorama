@@ -20,6 +20,7 @@ public class PanoramaItems {
 	public static Item ItemIcicleBlade;
 	public static Item ItemStrongPickaxe;
 	public static Item ItemSlicyAxe;
+	public static Item ItemAceOfSpades;
 	public static ItemArmor.ArmorMaterial thrustArmorMaterial = EnumHelper.addArmorMaterial("thrustArmorMaterial", "panorama:modesl/armor/thrustboots.png", 1000, new int[]{1, 1, 1, 1}, 10);
 	public static Item.ToolMaterial basicMaterial = EnumHelper.addToolMaterial("BasicMaterial", 1000, 0, 14F, 2F, 10);
 	
@@ -31,6 +32,7 @@ public class PanoramaItems {
 		ItemIcicleBlade = new MangoBox.panorama.item.ItemIcicleBlade(basicMaterial).setUnlocalizedName("ItemIcicleBlade");
 		ItemStrongPickaxe = new MangoBox.panorama.item.ItemStrongPickaxe(basicMaterial).setUnlocalizedName("ItemStrongPickaxe");
 		ItemSlicyAxe = new MangoBox.panorama.item.ItemSlicyAxe(basicMaterial).setUnlocalizedName("ItemSlicyAxe");
+		ItemAceOfSpades = new MangoBox.panorama.item.ItemAceOfSpades(basicMaterial).setUnlocalizedName("ItemAceOfSpades");
 	
 	
 	}
@@ -45,6 +47,7 @@ public class PanoramaItems {
 		GameRegistry.registerItem(ItemIcicleBlade, ItemIcicleBlade.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemStrongPickaxe, ItemStrongPickaxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSlicyAxe, ItemSlicyAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAceOfSpades, ItemAceOfSpades.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
@@ -55,6 +58,7 @@ public class PanoramaItems {
 		registerRender(ItemIcicleBlade);
 		registerRender(ItemStrongPickaxe);
 		registerRender(ItemSlicyAxe);
+		registerRender(ItemAceOfSpades);
 	}
 	
 	public static void registerRender(Item item) {
