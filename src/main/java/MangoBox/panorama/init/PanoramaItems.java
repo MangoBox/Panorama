@@ -21,8 +21,10 @@ public class PanoramaItems {
 	public static Item ItemStrongPickaxe;
 	public static Item ItemSlicyAxe;
 	public static Item ItemAceOfSpades;
+	public static Item ItemDefendersEdge;
 	public static ItemArmor.ArmorMaterial thrustArmorMaterial = EnumHelper.addArmorMaterial("thrustArmorMaterial", "panorama:modesl/armor/thrustboots.png", 1000, new int[]{1, 1, 1, 1}, 10);
 	public static Item.ToolMaterial basicMaterial = EnumHelper.addToolMaterial("BasicMaterial", 1000, 0, 14F, 2F, 10);
+	public static Item.ToolMaterial Tier2Material = EnumHelper.addToolMaterial("Tier2Material", 1000, 0, 14F, 2F, 10);
 	
 	public static void init() {
 		ItemThrustBoots = new MangoBox.panorama.materialClasses.thrustArmorMaterial(thrustArmorMaterial, 0, 3).setUnlocalizedName("ItemThrustBoots");
@@ -33,6 +35,7 @@ public class PanoramaItems {
 		ItemStrongPickaxe = new MangoBox.panorama.item.ItemStrongPickaxe(basicMaterial).setUnlocalizedName("ItemStrongPickaxe");
 		ItemSlicyAxe = new MangoBox.panorama.item.ItemSlicyAxe(basicMaterial).setUnlocalizedName("ItemSlicyAxe");
 		ItemAceOfSpades = new MangoBox.panorama.item.ItemAceOfSpades(basicMaterial).setUnlocalizedName("ItemAceOfSpades");
+		ItemDefendersEdge = new MangoBox.panorama.item.ItemDefendersEdge(Tier2Material).setUnlocalizedName("ItemDefendersEdge");
 	
 	
 	}
@@ -48,6 +51,7 @@ public class PanoramaItems {
 		GameRegistry.registerItem(ItemStrongPickaxe, ItemStrongPickaxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSlicyAxe, ItemSlicyAxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemAceOfSpades, ItemAceOfSpades.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemDefendersEdge,ItemDefendersEdge.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRenders() {
@@ -59,6 +63,7 @@ public class PanoramaItems {
 		registerRender(ItemStrongPickaxe);
 		registerRender(ItemSlicyAxe);
 		registerRender(ItemAceOfSpades);
+		registerRender(ItemDefendersEdge);
 	}
 	
 	public static void registerRender(Item item) {
