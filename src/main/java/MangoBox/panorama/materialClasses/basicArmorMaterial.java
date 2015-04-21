@@ -16,14 +16,15 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.ISpecialArmor;
 
-public class thrustArmorMaterial extends ItemArmor implements ISpecialArmor{
+public class basicArmorMaterial extends ItemArmor implements ISpecialArmor{
 
-	public thrustArmorMaterial(ArmorMaterial material, int renderIndex,
+	public basicArmorMaterial(ArmorMaterial material, int renderIndex,
 			int armorType) {
 		super(material, renderIndex, armorType);
 		// TODO Auto-generated constructor stub
 	}
 	
+	//This is unstable, it could be worldwide, not just the player who is wearing it, must change it
 	boolean Jumped = false;
 
 	@Override
@@ -55,12 +56,13 @@ public class thrustArmorMaterial extends ItemArmor implements ISpecialArmor{
 	@Override
 	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type) {
 		if(slot == 2) {
-			return "panorama:models/armor/thrustboots_layer_2.png";
+			return "panorama:models/armor/basicmaterial_layer_2.png";
 		} else
-		return "panorama:models/armor/thrustboots_layer_1.png";
+		return "panorama:models/armor/basicmaterial_layer_1.png";
 		
 	}
 	
+	//Very glitchy, needs fixing :(
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 		if(armor == player.getCurrentArmor(0)) {
@@ -78,6 +80,7 @@ public class thrustArmorMaterial extends ItemArmor implements ISpecialArmor{
 		if(player.onGround == true) {
 			Jumped = false;
 		}
+		//I need to code this differently, maybe with an attribute or something, instead of a speed buff when sprinting
 		if(armor == player.getCurrentArmor(1) && player.isSprinting() == true) {
 			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 1, 4));
 		}

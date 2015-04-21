@@ -1,8 +1,8 @@
 package MangoBox.panorama.item;
 
-import MangoBox.panorama.materialClasses.thrustArmorMaterial;
+import MangoBox.panorama.materialClasses.basicArmorMaterial;
 
-public class ItemSpeedyPants extends thrustArmorMaterial{
+public class ItemSpeedyPants extends basicArmorMaterial{
 
 	public ItemSpeedyPants(ArmorMaterial material, int renderIndex,
 			int armorType) {

@@ -1,8 +1,8 @@
 package MangoBox.panorama.item;
 
-import MangoBox.panorama.materialClasses.thrustArmorMaterial;
+import MangoBox.panorama.materialClasses.basicArmorMaterial;
 
-public class ItemScubaHelmet extends thrustArmorMaterial{
+public class ItemScubaHelmet extends basicArmorMaterial{
 
 	public ItemScubaHelmet(ArmorMaterial material, int renderIndex,
 			int armorType) {

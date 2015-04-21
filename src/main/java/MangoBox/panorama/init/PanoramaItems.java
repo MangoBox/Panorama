@@ -23,16 +23,16 @@ public class PanoramaItems {
 	public static Item ItemAceOfSpades;
 	public static Item ItemDefendersEdge;
 	public static Item ItemPortalPearl;
-	public static ItemArmor.ArmorMaterial thrustArmorMaterial = EnumHelper.addArmorMaterial("thrustArmorMaterial", "panorama:modesl/armor/thrustboots.png", 1000, new int[]{1, 1, 1, 1}, 10);
+	public static ItemArmor.ArmorMaterial basicArmorMaterial = EnumHelper.addArmorMaterial("basicArmorMaterial", "panorama:modesl/armor/thrustboots.png", 1000, new int[]{1, 1, 1, 1}, 10);
 	public static Item.ToolMaterial basicMaterial = EnumHelper.addToolMaterial("BasicMaterial", 1000, 0, 14F, 2F, 10);
 	public static Item.ToolMaterial Tier2Material = EnumHelper.addToolMaterial("Tier2Material", 1000, 0, 14F, 2F, 10);
 	
 	public static void init() {
 		//Armor
-		ItemThrustBoots = new MangoBox.panorama.materialClasses.thrustArmorMaterial(thrustArmorMaterial, 0, 3).setUnlocalizedName("ItemThrustBoots").setCreativeTab(Panorama.tabPanorama);
-		ItemScubaHelmet = new MangoBox.panorama.materialClasses.thrustArmorMaterial(thrustArmorMaterial, 0, 0).setUnlocalizedName("ItemScubaHelmet").setCreativeTab(Panorama.tabPanorama);
-		ItemSpeedyPants = new MangoBox.panorama.materialClasses.thrustArmorMaterial(thrustArmorMaterial, 0, 2).setUnlocalizedName("ItemSpeedyPants").setCreativeTab(Panorama.tabPanorama);
-		ItemSheildChest = new MangoBox.panorama.materialClasses.thrustArmorMaterial(thrustArmorMaterial, 0, 1).setUnlocalizedName("ItemSheildChest").setCreativeTab(Panorama.tabPanorama);
+		ItemThrustBoots = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 3).setUnlocalizedName("ItemThrustBoots").setCreativeTab(Panorama.tabPanorama);
+		ItemScubaHelmet = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 0).setUnlocalizedName("ItemScubaHelmet").setCreativeTab(Panorama.tabPanorama);
+		ItemSpeedyPants = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 2).setUnlocalizedName("ItemSpeedyPants").setCreativeTab(Panorama.tabPanorama);
+		ItemSheildChest = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 1).setUnlocalizedName("ItemSheildChest").setCreativeTab(Panorama.tabPanorama);
 		
 		//Items
 		ItemPortalPearl = new Item().setUnlocalizedName("ItemPortalPearl").setCreativeTab(Panorama.tabPanorama);

@@ -8,9 +8,9 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import MangoBox.panorama.Panorama;
-import MangoBox.panorama.materialClasses.thrustArmorMaterial;
+import MangoBox.panorama.materialClasses.basicArmorMaterial;
 
-public class ItemThrustBoots extends thrustArmorMaterial{
+public class ItemThrustBoots extends basicArmorMaterial{
 
 	public ItemThrustBoots(ArmorMaterial material, int renderIndex,
 			int armorType) {
