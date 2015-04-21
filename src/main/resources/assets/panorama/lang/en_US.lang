@@ -6,3 +6,6 @@ item.ItemStrongPickaxe.name=Strong Pickaxe
 item.ItemSlicyAxe.name=Slicy Axe
 item.ItemAceOfSpades.name=Ace of Spades
 item.ItemDefendersEdge.name=Defenders Edge
+item.ItemPortalPearl.name=Portal Pearl
+item.ItemSheildChest.name=Sheild Chest
+itemGroup.tabPanorama=Panorama

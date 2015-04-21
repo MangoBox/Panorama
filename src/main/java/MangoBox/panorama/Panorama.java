@@ -22,7 +22,7 @@ public class Panorama {
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
-	
+	public static final PanoramaTab tabPanorama = new PanoramaTab("tabPanorama");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
