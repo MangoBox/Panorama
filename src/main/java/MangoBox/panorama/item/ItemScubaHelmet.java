@@ -9,5 +9,5 @@ public class ItemScubaHelmet extends basicArmorMaterial{
 		super(material, renderIndex, armorType);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 }

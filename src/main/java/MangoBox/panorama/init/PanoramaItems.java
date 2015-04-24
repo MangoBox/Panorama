@@ -13,17 +13,27 @@ import MangoBox.panorama.item.ItemThrustBoots;
 
 public class PanoramaItems {
 	
+	//Armor
 	public static Item ItemThrustBoots;
 	public static Item ItemScubaHelmet;
 	public static Item ItemSpeedyPants;
 	public static Item ItemSheildChest;
+	public static Item ItemNanoHelm;
+	public static Item ItemNanoChest;
+	public static Item ItemNanoLegs;
+	public static Item ItemNanoBoots;
+	
+	//Tools and Weapons
 	public static Item ItemIcicleBlade;
 	public static Item ItemStrongPickaxe;
 	public static Item ItemSlicyAxe;
 	public static Item ItemAceOfSpades;
 	public static Item ItemDefendersEdge;
+	
+	//Items
 	public static Item ItemPortalPearl;
-	public static ItemArmor.ArmorMaterial basicArmorMaterial = EnumHelper.addArmorMaterial("basicArmorMaterial", "panorama:modesl/armor/thrustboots.png", 1000, new int[]{1, 1, 1, 1}, 10);
+	public static ItemArmor.ArmorMaterial basicArmorMaterial = EnumHelper.addArmorMaterial("basicArmorMaterial", "panorama:models/armor/basicmaterial_layer_1.png", 1000, new int[]{1, 1, 1, 1}, 10);
+	public static ItemArmor.ArmorMaterial nanoArmorMaterial = EnumHelper.addArmorMaterial("nanoArmorMaterial", "panorama:models/armor/nanomaterial_layer_1.png", 1000, new int[]{5, 5, 5, 5}, 10);
 	public static Item.ToolMaterial basicMaterial = EnumHelper.addToolMaterial("BasicMaterial", 1000, 0, 14F, 2F, 10);
 	public static Item.ToolMaterial Tier2Material = EnumHelper.addToolMaterial("Tier2Material", 1000, 0, 14F, 2F, 10);
 	
@@ -33,6 +43,10 @@ public class PanoramaItems {
 		ItemScubaHelmet = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 0).setUnlocalizedName("ItemScubaHelmet").setCreativeTab(Panorama.tabPanorama);
 		ItemSpeedyPants = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 2).setUnlocalizedName("ItemSpeedyPants").setCreativeTab(Panorama.tabPanorama);
 		ItemSheildChest = new MangoBox.panorama.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 1).setUnlocalizedName("ItemSheildChest").setCreativeTab(Panorama.tabPanorama);
+		ItemNanoHelm = new MangoBox.panorama.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 0).setUnlocalizedName("ItemNanoHelm").setCreativeTab(Panorama.tabPanorama);
+		ItemNanoChest = new MangoBox.panorama.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 1).setUnlocalizedName("ItemNanoChest").setCreativeTab(Panorama.tabPanorama);
+		ItemNanoLegs = new MangoBox.panorama.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 2).setUnlocalizedName("ItemNanoLegs").setCreativeTab(Panorama.tabPanorama);
+		ItemNanoBoots = new MangoBox.panorama.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 3).setUnlocalizedName("ItemNanoBoots").setCreativeTab(Panorama.tabPanorama);
 		
 		//Items
 		ItemPortalPearl = new Item().setUnlocalizedName("ItemPortalPearl").setCreativeTab(Panorama.tabPanorama);
@@ -55,6 +69,10 @@ public class PanoramaItems {
 		GameRegistry.registerItem(ItemScubaHelmet, ItemScubaHelmet.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSpeedyPants, ItemSpeedyPants.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSheildChest, ItemSheildChest.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNanoHelm, ItemNanoHelm.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNanoChest, ItemNanoChest.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNanoLegs, ItemNanoLegs.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNanoBoots, ItemNanoBoots.getUnlocalizedName().substring(5));
 		
 		//Items
 		GameRegistry.registerItem(ItemPortalPearl, ItemPortalPearl.getUnlocalizedName().substring(5));
@@ -73,6 +91,10 @@ public class PanoramaItems {
 		registerRender(ItemScubaHelmet);
 		registerRender(ItemSpeedyPants);
 		registerRender(ItemSheildChest);
+		registerRender(ItemNanoHelm);
+		registerRender(ItemNanoChest);
+		registerRender(ItemNanoLegs);
+		registerRender(ItemNanoBoots);
 		
 		//Items
 		registerRender(ItemPortalPearl);

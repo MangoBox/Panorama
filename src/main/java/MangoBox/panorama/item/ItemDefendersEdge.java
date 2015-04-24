@@ -24,7 +24,7 @@ public class ItemDefendersEdge extends ItemSword {
         playerIn.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 200, ((int)playerIn.getMaxHealth() - (int)playerIn.getHealth() / 4), true, false));
     	playerIn.playSound("random.anvil_land", 0.5F, 1.0F);
     	worldIn.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, playerIn.posX, playerIn.posY + 1D, playerIn.posZ, 0.1, 0.1, 0.1, 1);
-        return itemStackIn;
+    	return itemStackIn;
     }
 
 	
