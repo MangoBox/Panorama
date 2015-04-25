@@ -7,10 +7,16 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
+import net.minecraft.world.World;
 import net.minecraftforge.common.ISpecialArmor;
+import net.minecraftforge.common.ISpecialArmor.ArmorProperties;
 
 public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
+
+	private static final Potion PotionEffect = null;
 
 	public nanoArmorMaterial(ArmorMaterial material, int renderIndex,
 			int armorType) {
@@ -18,9 +24,8 @@ public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
 	}
 
 	@Override
-	public ArmorProperties getProperties(EntityLivingBase player,
-			ItemStack armor, DamageSource source, double damage, int slot) {
-		return null;
+	public ArmorProperties getProperties(EntityLivingBase player, ItemStack armor, DamageSource source, double damage, int slot) {
+		return new ArmorProperties(0, 0, 0);
 	}
 
 	@Override
@@ -41,5 +46,16 @@ public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
 		} else
 		return "panorama:models/armor/nanomaterial_layer_1.png";
 		
+	}
+	
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
+		if(armor == player.getCurrentArmor(0)) {
+			if(player.isPotionActive(Potion.absorption) == false) {
+				player.addPotionEffect(new PotionEffect(PotionEffect.absorption.id, 1200, 4, true, false));
+				world.playSoundAtEntity(player, "random.successful_hit", 1, 1);
+			}
+
+		}
 	}
 }
