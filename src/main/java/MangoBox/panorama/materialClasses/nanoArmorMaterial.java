@@ -1,5 +1,6 @@
 package MangoBox.panorama.materialClasses;
 
+import MangoBox.panorama.init.PanoramaItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,7 +17,6 @@ import net.minecraftforge.common.ISpecialArmor.ArmorProperties;
 
 public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
 
-	private static final Potion PotionEffect = null;
 
 	public nanoArmorMaterial(ArmorMaterial material, int renderIndex,
 			int armorType) {
@@ -52,7 +52,7 @@ public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
 		if(armor == player.getCurrentArmor(0)) {
 			if(player.isPotionActive(Potion.absorption) == false) {
-				player.addPotionEffect(new PotionEffect(PotionEffect.absorption.id, 1200, 4, true, false));
+				player.addPotionEffect(new PotionEffect(Potion.absorption.id, 1200, 4, true, false));
 				world.playSoundAtEntity(player, "random.successful_hit", 1, 1);
 			}
 

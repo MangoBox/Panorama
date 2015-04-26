@@ -12,4 +12,7 @@ item.ItemNanoHelm.name=Nanosuit Helmet
 item.ItemNanoLegs.name=Nanosuit Greaves
 item.ItemNanoBoots.name=Nanosuit Boots
 item.ItemNanoChest.name=Nanosuit Vest
+item.ItemTier1Core.name=Tier 1 Core
+item.ItemTier2Core.name=Tier 2 Core
+item.ItemTier3Core.name=Tier 3 Core
 itemGroup.tabPanorama=Panorama
