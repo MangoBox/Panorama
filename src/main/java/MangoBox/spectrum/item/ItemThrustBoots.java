@@ -8,7 +8,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import MangoBox.spectrum.materialClasses.basicArmorMaterial;
-import MangoBox.spectrum.Panorama;
+import MangoBox.spectrum.Spectrum;
 
 public class ItemThrustBoots extends basicArmorMaterial{
 

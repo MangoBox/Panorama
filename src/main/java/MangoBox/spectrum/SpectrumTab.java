@@ -5,9 +5,9 @@ import MangoBox.spectrum.init.SpectrumItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class PanoramaTab extends CreativeTabs {
+public class SpectrumTab extends CreativeTabs {
 
-	public PanoramaTab(String label) {
+	public SpectrumTab(String label) {
 		super(label);
 		this.setBackgroundImageName("panorama.png");
 	}

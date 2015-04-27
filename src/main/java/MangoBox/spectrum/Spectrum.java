@@ -17,36 +17,36 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-public class Panorama {
+public class Spectrum {
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
-	public static final PanoramaTab tabPanorama = new PanoramaTab("tabPanorama");
+	public static final SpectrumTab tabSpectrum = new SpectrumTab("tabSpectrum");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Beginning for Panorama");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Beginning for Spectrum");
 		SpectrumItems.init();
 		SpectrumItems.register();
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Complete for Panorama :D");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Complete for Spectrum :D");
 		
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Beginning for Panorama");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Beginning for Spectrum");
 		proxy.registerRenders();
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Complete for Panorama :D");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Complete for Spectrum :D");
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PostInitialization Beginning for Panorama");
-		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PostInitialization Complete for Panorama! All ready to go! :D :D :D");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PostInitialization Beginning for Spectrum");
+		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PostInitialization Complete for Spectrum! All ready to go! :D :D :D");
 	}
 
 }

@@ -8,7 +8,7 @@ import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import MangoBox.spectrum.item.ItemThrustBoots;
-import MangoBox.spectrum.Panorama;
+import MangoBox.spectrum.Spectrum;
 import MangoBox.spectrum.Reference;
 
 public class SpectrumItems {
@@ -46,28 +46,28 @@ public class SpectrumItems {
 	
 	public static void init() {
 		//Armor
-		ItemThrustBoots = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 3).setUnlocalizedName("ItemThrustBoots").setCreativeTab(Panorama.tabPanorama);
-		ItemScubaHelmet = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 0).setUnlocalizedName("ItemScubaHelmet").setCreativeTab(Panorama.tabPanorama);
-		ItemSpeedyPants = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 2).setUnlocalizedName("ItemSpeedyPants").setCreativeTab(Panorama.tabPanorama);
-		ItemSheildChest = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 1).setUnlocalizedName("ItemSheildChest").setCreativeTab(Panorama.tabPanorama);
-		ItemNanoHelm = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 0).setUnlocalizedName("ItemNanoHelm").setCreativeTab(Panorama.tabPanorama);
-		ItemNanoChest = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 1).setUnlocalizedName("ItemNanoChest").setCreativeTab(Panorama.tabPanorama);
-		ItemNanoLegs = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 2).setUnlocalizedName("ItemNanoLegs").setCreativeTab(Panorama.tabPanorama);
-		ItemNanoBoots = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 3).setUnlocalizedName("ItemNanoBoots").setCreativeTab(Panorama.tabPanorama);
+		ItemThrustBoots = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 3).setUnlocalizedName("ItemThrustBoots").setCreativeTab(Spectrum.tabSpectrum);
+		ItemScubaHelmet = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 0).setUnlocalizedName("ItemScubaHelmet").setCreativeTab(Spectrum.tabSpectrum);
+		ItemSpeedyPants = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 2).setUnlocalizedName("ItemSpeedyPants").setCreativeTab(Spectrum.tabSpectrum);
+		ItemSheildChest = new MangoBox.spectrum.materialClasses.basicArmorMaterial(basicArmorMaterial, 0, 1).setUnlocalizedName("ItemSheildChest").setCreativeTab(Spectrum.tabSpectrum);
+		ItemNanoHelm = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 0).setUnlocalizedName("ItemNanoHelm").setCreativeTab(Spectrum.tabSpectrum);
+		ItemNanoChest = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 1).setUnlocalizedName("ItemNanoChest").setCreativeTab(Spectrum.tabSpectrum);
+		ItemNanoLegs = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 2).setUnlocalizedName("ItemNanoLegs").setCreativeTab(Spectrum.tabSpectrum);
+		ItemNanoBoots = new MangoBox.spectrum.materialClasses.nanoArmorMaterial(nanoArmorMaterial, 0, 3).setUnlocalizedName("ItemNanoBoots").setCreativeTab(Spectrum.tabSpectrum);
 		
 		//Items
-		ItemPortalPearl = new Item().setUnlocalizedName("ItemPortalPearl").setCreativeTab(Panorama.tabPanorama);
-		ItemTier1Core = new Item().setUnlocalizedName("ItemTier1Core").setCreativeTab(Panorama.tabPanorama);
-		ItemTier2Core = new Item().setUnlocalizedName("ItemTier2Core").setCreativeTab(Panorama.tabPanorama);
-		ItemTier3Core = new Item().setUnlocalizedName("ItemTier3Core").setCreativeTab(Panorama.tabPanorama);
+		ItemPortalPearl = new Item().setUnlocalizedName("ItemPortalPearl").setCreativeTab(Spectrum.tabSpectrum);
+		ItemTier1Core = new Item().setUnlocalizedName("ItemTier1Core").setCreativeTab(Spectrum.tabSpectrum);
+		ItemTier2Core = new Item().setUnlocalizedName("ItemTier2Core").setCreativeTab(Spectrum.tabSpectrum);
+		ItemTier3Core = new Item().setUnlocalizedName("ItemTier3Core").setCreativeTab(Spectrum.tabSpectrum);
 		
 		
 		//Tools and Weapons
-		ItemIcicleBlade = new MangoBox.spectrum.item.ItemIcicleBlade(basicMaterial).setUnlocalizedName("ItemIcicleBlade").setCreativeTab(Panorama.tabPanorama);
-		ItemStrongPickaxe = new MangoBox.spectrum.item.ItemStrongPickaxe(basicMaterial).setUnlocalizedName("ItemStrongPickaxe").setCreativeTab(Panorama.tabPanorama);
-		ItemSlicyAxe = new MangoBox.spectrum.item.ItemSlicyAxe(basicMaterial).setUnlocalizedName("ItemSlicyAxe").setCreativeTab(Panorama.tabPanorama);
-		ItemAceOfSpades = new MangoBox.spectrum.item.ItemAceOfSpades(basicMaterial).setUnlocalizedName("ItemAceOfSpades").setCreativeTab(Panorama.tabPanorama);
-		ItemDefendersEdge = new MangoBox.spectrum.item.ItemDefendersEdge(Tier2Material).setUnlocalizedName("ItemDefendersEdge").setCreativeTab(Panorama.tabPanorama);
+		ItemIcicleBlade = new MangoBox.spectrum.item.ItemIcicleBlade(basicMaterial).setUnlocalizedName("ItemIcicleBlade").setCreativeTab(Spectrum.tabSpectrum);
+		ItemStrongPickaxe = new MangoBox.spectrum.item.ItemStrongPickaxe(basicMaterial).setUnlocalizedName("ItemStrongPickaxe").setCreativeTab(Spectrum.tabSpectrum);
+		ItemSlicyAxe = new MangoBox.spectrum.item.ItemSlicyAxe(basicMaterial).setUnlocalizedName("ItemSlicyAxe").setCreativeTab(Spectrum.tabSpectrum);
+		ItemAceOfSpades = new MangoBox.spectrum.item.ItemAceOfSpades(basicMaterial).setUnlocalizedName("ItemAceOfSpades").setCreativeTab(Spectrum.tabSpectrum);
+		ItemDefendersEdge = new MangoBox.spectrum.item.ItemDefendersEdge(Tier2Material).setUnlocalizedName("ItemDefendersEdge").setCreativeTab(Spectrum.tabSpectrum);
 	
 	
 	}
