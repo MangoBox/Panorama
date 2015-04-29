@@ -15,4 +15,5 @@ item.ItemNanoChest.name=Nanosuit Vest
 item.ItemTier1Core.name=Tier 1 Core
 item.ItemTier2Core.name=Tier 2 Core
 item.ItemTier3Core.name=Tier 3 Core
+tile.BlockCrafterTier1.name=Tier 1 Crafter
 itemGroup.tabSpectrum=Spectrum

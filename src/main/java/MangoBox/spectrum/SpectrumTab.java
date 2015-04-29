@@ -9,7 +9,7 @@ public class SpectrumTab extends CreativeTabs {
 
 	public SpectrumTab(String label) {
 		super(label);
-		this.setBackgroundImageName("panorama.png");
+		this.setBackgroundImageName("spectrum.png");
 	}
 
 	@Override

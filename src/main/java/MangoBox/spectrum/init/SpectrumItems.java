@@ -1,5 +1,7 @@
 package MangoBox.spectrum.init;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -88,6 +90,8 @@ public class SpectrumItems {
 		//Items
 		GameRegistry.registerItem(ItemPortalPearl, ItemPortalPearl.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemTier1Core, ItemTier1Core.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTier2Core, ItemTier2Core.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTier3Core, ItemTier3Core.getUnlocalizedName().substring(5));
 		
 		//Tools and Weapons
 		GameRegistry.registerItem(ItemIcicleBlade, ItemIcicleBlade.getUnlocalizedName().substring(5));
@@ -95,9 +99,7 @@ public class SpectrumItems {
 		GameRegistry.registerItem(ItemSlicyAxe, ItemSlicyAxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemAceOfSpades, ItemAceOfSpades.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemDefendersEdge,ItemDefendersEdge.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemTier1Core, ItemTier1Core.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemTier2Core, ItemTier2Core.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemTier3Core, ItemTier3Core.getUnlocalizedName().substring(5));
+
 	}
 
 	public static void registerRenders() {

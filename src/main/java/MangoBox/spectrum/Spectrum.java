@@ -3,6 +3,7 @@ package MangoBox.spectrum;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import MangoBox.spectrum.init.SpectrumBlocks;
 import MangoBox.spectrum.init.SpectrumItems;
 import MangoBox.spectrum.item.ItemThrustBoots;
 import MangoBox.spectrum.proxy.CommonProxy;
@@ -28,6 +29,8 @@ public class Spectrum {
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Beginning for Spectrum");
+		SpectrumBlocks.init();
+		SpectrumBlocks.register();
 		SpectrumItems.init();
 		SpectrumItems.register();
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "PreInitialization Complete for Spectrum :D");
