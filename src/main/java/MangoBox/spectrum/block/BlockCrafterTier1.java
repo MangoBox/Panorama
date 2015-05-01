@@ -9,5 +9,10 @@ public class BlockCrafterTier1 extends Block{
 		super(materialIn);
 		// TODO Auto-generated constructor stub
 	}
+	
+    public boolean isOpaqueCube()
+    {
+        return false;
+    }
 
 }

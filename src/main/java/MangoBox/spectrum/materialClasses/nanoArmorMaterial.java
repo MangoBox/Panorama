@@ -42,9 +42,9 @@ public class nanoArmorMaterial extends ItemArmor implements ISpecialArmor {
 	@Override
 	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type) {
 		if(slot == 2) {
-			return "panorama:models/armor/nanomaterial_layer_2.png";
+			return "spectrum:models/armor/nanomaterial_layer_2.png";
 		} else
-		return "panorama:models/armor/nanomaterial_layer_1.png";
+		return "spectrum:models/armor/nanomaterial_layer_1.png";
 		
 	}
 	

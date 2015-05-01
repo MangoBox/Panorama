@@ -56,9 +56,9 @@ public class basicArmorMaterial extends ItemArmor implements ISpecialArmor{
 	@Override
 	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type) {
 		if(slot == 2) {
-			return "panorama:models/armor/basicmaterial_layer_2.png";
+			return "spectrum:models/armor/basicmaterial_layer_2.png";
 		} else
-		return "panorama:models/armor/basicmaterial_layer_1.png";
+		return "spectrum:models/armor/basicmaterial_layer_1.png";
 		
 	}
 	
