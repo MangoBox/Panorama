@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
@@ -22,6 +23,8 @@ public class Spectrum {
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
+	
+	@Mod.Instance(Reference.MOD_ID)public static Spectrum instance;
 	
 	public static final SpectrumTab tabSpectrum = new SpectrumTab("tabSpectrum");
 	
@@ -42,6 +45,7 @@ public class Spectrum {
 	{
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Beginning for Spectrum");
 		proxy.registerRenders();
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Complete for Spectrum :D");
 	}
 	
