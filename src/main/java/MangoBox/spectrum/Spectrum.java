@@ -11,6 +11,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -24,7 +25,8 @@ public class Spectrum {
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
-	@Mod.Instance(Reference.MOD_ID)public static Spectrum instance;
+	@Instance(Reference.MOD_ID)
+	public static Object Modinstance;
 	
 	public static final SpectrumTab tabSpectrum = new SpectrumTab("tabSpectrum");
 	
@@ -45,7 +47,7 @@ public class Spectrum {
 	{
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Beginning for Spectrum");
 		proxy.registerRenders();
-		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+		NetworkRegistry.INSTANCE.registerGuiHandler(Modinstance, new GuiHandler());
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Complete for Spectrum :D");
 	}
 	

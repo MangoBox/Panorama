@@ -11,7 +11,7 @@ public class GuiTable extends GuiScreen{
 	private EntityPlayer player;
 	private World world;
 	private int xSize, ySize;
-	private ResourceLocation backgroundimage = new ResourceLocation(Reference.MOD_ID.toLowerCase() + ":" + "textures/client/gui/GuiTable.png");
+	private ResourceLocation backgroundimage = new ResourceLocation(Reference.MOD_ID.toLowerCase() + ":" + "textures/client/gui/TableGui.png");
 	
 	
 	public GuiTable(EntityPlayer player, World world, int x, int y, int z) {
