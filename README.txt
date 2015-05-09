@@ -1,6 +1,6 @@
 Hello Everybody!
-I am MangoBox, and I am the developer of Panorama.
-Panorama is a mod for Minecraft 1.8, hopefully featuring now and in the future:
+I am MangoBox, and I am the developer of Spectrum.
+Spectrum is a mod for Minecraft 1.8, hopefully featuring now and in the future:
 - A Rogue-Like System with tons of 3D-rendered special tools, items and armor
 - Many Gadgets useful for daily Minecraft use, hopefully implementing various APIs in the future
 
