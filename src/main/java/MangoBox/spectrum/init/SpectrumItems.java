@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -31,6 +32,7 @@ public class SpectrumItems {
 	public static Item ItemSlicyAxe;
 	public static Item ItemAceOfSpades;
 	public static Item ItemDefendersEdge;
+	public static Item ItemCarbonBow;
 	
 	//Items
 	public static Item ItemPortalPearl;
@@ -70,8 +72,7 @@ public class SpectrumItems {
 		ItemSlicyAxe = new MangoBox.spectrum.item.ItemSlicyAxe(basicMaterial).setUnlocalizedName("ItemSlicyAxe").setCreativeTab(Spectrum.tabSpectrum);
 		ItemAceOfSpades = new MangoBox.spectrum.item.ItemAceOfSpades(basicMaterial).setUnlocalizedName("ItemAceOfSpades").setCreativeTab(Spectrum.tabSpectrum);
 		ItemDefendersEdge = new MangoBox.spectrum.item.ItemDefendersEdge(Tier2Material).setUnlocalizedName("ItemDefendersEdge").setCreativeTab(Spectrum.tabSpectrum);
-	
-	
+		ItemCarbonBow = new ItemBow().setUnlocalizedName("ItemCarbonBow").setCreativeTab(Spectrum.tabSpectrum);	
 	}
 	
 	
@@ -99,6 +100,7 @@ public class SpectrumItems {
 		GameRegistry.registerItem(ItemSlicyAxe, ItemSlicyAxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemAceOfSpades, ItemAceOfSpades.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemDefendersEdge,ItemDefendersEdge.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCarbonBow, ItemCarbonBow.getUnlocalizedName().substring(5));
 
 	}
 
@@ -125,6 +127,7 @@ public class SpectrumItems {
 		registerRender(ItemSlicyAxe);
 		registerRender(ItemAceOfSpades);
 		registerRender(ItemDefendersEdge);
+		registerRender(ItemCarbonBow);
 	}
 	
 	public static void registerRender(Item item) {

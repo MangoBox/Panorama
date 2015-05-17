@@ -47,6 +47,7 @@ public class Spectrum {
 	{
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Beginning for Spectrum");
 		proxy.registerRenders();
+		proxy.registerTileEntities();
 		NetworkRegistry.INSTANCE.registerGuiHandler(Modinstance, new GuiHandler());
 		Logger.getLogger(Reference.MOD_ID).log(Level.INFO, "Initialization Complete for Spectrum :D");
 	}

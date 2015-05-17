@@ -22,14 +22,5 @@ public class BlockCrafterTier1 extends Block{
     {
         return false;
     }
-    
-    @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ) {
-        if(worldIn.isRemote) {
-                playerIn.openGui(Spectrum.Modinstance, GUIs.Crafter.ordinal(), worldIn, pos.getX(), pos.getY(), pos.getZ());
-            return true;
-        }
-        return true;
-    }
 
 }
